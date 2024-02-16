@@ -1,6 +1,6 @@
 # Arnan Comia Portfolio
 
-![Welcome to my Portfolio](home.png)
+![Web](home.png)![Mobile](mobileview.png)
 
 ## Tech Stack
 
