@@ -1,6 +1,6 @@
 "use client";
 
-import { ILinks } from "@/utils/constants";
+import { ILinks } from "@utils/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

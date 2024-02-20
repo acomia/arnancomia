@@ -1,3 +1,10 @@
+import { StaticImageData } from "next/image";
+
+import agoraLogin from "@assets/images/projects/agora_login.png";
+import agoraDashboard from "@assets/images/projects/agora_dashboard.png";
+import agoraMap from "@assets/images/projects/agora_map.png";
+import agoraSearch from "@assets/images/projects/agora_search.png";
+
 export interface ILinks {
   url: string;
   title: string;
@@ -20,7 +27,7 @@ export interface IProjects {
   color: string;
   title: string;
   description: string;
-  image: string;
+  images: Array<StaticImageData | string>;
 }
 
 export const links: ILinks[] = [
@@ -72,29 +79,26 @@ export const projects: IProjects[] = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
+    title: "Health Manage App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    image:
-      "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "The App is designed to provide a personalized, holistic, and interactive experience to avail your healthcare services and benefits.With just a few taps, you can access your account profile, search for accredited providers, consult with a doctor, and secure online forms for consultation and diagnostic procedures for convenience.",
+    images: [agoraLogin, agoraDashboard, agoraMap, agoraSearch],
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
+    title: "Parent App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    image:
-      "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "This School Management System (SMS) is the platform for Parents / Guardians to receive regular updates with important information, notices and announcements.",
+    images: [agoraLogin, agoraDashboard, agoraMap, agoraSearch],
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
+    title: "Vessel Management App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    image:
-      "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      "VMA allows you to manage your entire fleet of vessels using a single platform. The mobile app allows you to: Tracks vessel, Manage Plan & Cargo, Keep track of your invoices, manage and plan maintenance tasks, view certificate and enter reservoir measurements.",
+    images: [agoraLogin, agoraDashboard, agoraMap, agoraSearch],
   },
   {
     id: 4,
@@ -102,7 +106,6 @@ export const projects: IProjects[] = [
     title: "Spotify Music App",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    image:
-      "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    images: [agoraLogin, agoraDashboard, agoraMap, agoraSearch],
   },
 ];

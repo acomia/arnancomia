@@ -6,7 +6,7 @@ import ScrollButton from "@components/ScrollButton";
 import Skills from "@components/Skills";
 import LeftExperienceListItem from "@components/LeftExperienceListItem";
 import RightExperienceListItem from "@components/RightExperienceListItem";
-import { experience } from "@/utils/constants";
+import { experience } from "@utils/constants";
 import Brain from "@components/Brain";
 import { useRef } from "react";
 

@@ -3,6 +3,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
+import profile from "@assets/images/profile.png";
+
 export default function Home() {
   const router = useRouter();
   return (
@@ -12,20 +14,20 @@ export default function Home() {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+      <div className="flex flex-col h-full lg:flex-row  px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
         {/* Image Container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
-            src="/profile.png"
+            src={profile}
             alt="profile"
             fill
-            className="object-contain"
+            style={{ objectFit: "contain" }}
           />
         </div>
         {/* Text Container */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Mobile developer specializing in React Native for cross-platform app
+          <h1 className="text-4xl md:text-5xl font-bold">
+            Front-end developer specializing in React & React Native
             development.
           </h1>
           <p className="md:text-xl">

@@ -1,4 +1,4 @@
-import { IExperience } from "@/utils/constants";
+import { IExperience } from "@utils/constants";
 
 interface IProps {
   data: IExperience;
